@@ -1,0 +1,83 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/newsdownloader")
+    @Styles.Render("~/Content/bootstrap")
+    @Styles.Render("~/Content/bootstraptheme")
+    @Styles.Render("~/Content/NewsLowderStyles")
+</head>
+<body>
+    @*<div id="wrapper" class="wrapper">
+            <div class="header">
+                <button type="button" class="btn btn-default" id='loadBtn'>
+                    <i class="glyphicon glyphicon-refresh"></i> Load News
+                </button>
+
+                <button type="button" class="btn btn-default " id="deleteBtn">
+                    <i class="glyphicon glyphicon-trash ui-disabled"></i> Delete Selected News
+                </button>
+
+
+                <div class=".blockquote-reverse" style="float: right;">
+                    News Count
+                    <span class="badge" id="count">0</span>
+                </div>
+            </div>
+
+            <div class="container">
+                <div id="listTitles" class="classListTitles">
+                </div>
+
+                <div id="newsContent" class="classContent">
+                </div>
+            </div>
+        </div>*@
+    <div class="container well">
+        <div class="row margin_20">
+            <div class="col-sm-4">
+                <button type="button" class="btn btn-default margin_right_20" id='loadBtn'>
+                    <i class="glyphicon glyphicon-refresh"></i> <span id="load_span">Load News</span>
+                </button>
+
+                <button type="button" class="btn btn-default" id="deleteBtn">
+                    <i class="glyphicon glyphicon-trash ui-disabled"></i> <span id="delete_span">Delete Selected News</span> 
+                </button>
+            </div>
+            <div class="col-sm-2 col-sm-offset-6">
+                <div class="blockquote-reverse">
+                    News Count
+                    <span class="badge" id="count">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="clear: both;">
+            <div class="col-sm-4">
+                <div id="listTitles" class="classListTitles">
+                </div>
+            </div>
+            <div class="col-sm-8 img-rounded">
+                <div id="newsContent" class="classContent">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*<div class="container">
+            <div class="wrapper">
+                <div class="content-main">...</div>
+                <div class="content-secondary">...</div>
+            </div>
+    </div>*@
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Coding Challenge</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body style="padding: 20px;">
+<h1>Coding Challenge</h1>
+
+<h2>Introduction</h2>
+<p>The purpose of this exercise is to demonstrate that you can implement a simple piece of functionality. Your results will be assessed based on the correctness of the final functionality AND the
+internal quality of the code produced.</p>
+<p>In addition to working functionality I always want to see readable, maintainable code which follows the established patterns of the application. I don't like to see large methods with too many
+responsibilities, but I also don't like to see code which is unnecessarily complex.</p>
+
+<h2>Rules for taking the exercise</h2>
+<ul>
+    <li>This exercise is expected to take about 3 hours</li>
+    <li>You are allowed to use Google, StackOverview, books etc. to assist you</li>
+    <li>You are NOT allowed to ask other people for help</li>
+</ul>
+
+<h2>Expectations of internal code quality</h2>
+<ul>
+    <li>Your cdoe should be quality</li>
+</ul>
+
+<h2>Deliverables</h2>
+
+<h3>1. Load the news</h3>
+<p>Open up "some file" in a browser and you should see a page like this:</p>
+<p><img src="instructions/image001.png"/></p>
+<p>When the "Load News" button is clicked it should change to appear like this (note there is deliberately a delay in the JS code so that this can be seen):</p>
+<p><img src="instructions/image002.png"/></p>
+<p>When the news has finished loading it should appear like this:</p>
+<p><img src="instructions/image003.png"/></p>
+<p>Note that:</p>
+<ul>
+    <li>The "News Count" has been populated with the number of news items found</li>
+    <li>The news headlines are displayed in the left panel</li>
+    <li>The first news headline is selected</li>
+    <li>The contents of the first news item is displayed in the right panel</li>
+</ul>
+
+<h3>2. Select news items</h3>
+<p>When any of the headlines on the left are clicked then the news item should be displayed on the right.</p>
+<p>For example, if the second headline is clicked then the page will look like this:</p>
+<p><img src="instructions/image004.png"/></p>
+
+<h3>3. Delete news items</h3>
+<p>When the "Delete Selected News..." button is clicked it should change to appear like this:</p>
+<p><img src="instructions/image005.png"/></p>
+<p>Note that the underlying data is not really deleted - this is so you can do a page refresh and still have test data!</p>
+<p>Once the delete has completed the screen will appear like this:</p>
+<p><img src="instructions/image006.png"/></p>
+<p>Note that:</p>
+<ul>
+    <li>The "News Count" has been updated</li>
+    <li>The news headlines have been updated in the left panel</li>
+    <li>The next news headline after the item which was deleted is now selected (if the last item in the list was deleted then select the item before, if all the items have been deleted then the
+        screen should appear as it did before "Load News" was pressed)
+    </li>
+    <li>The contents of the currently selected news item is displayed in the right panel</li>
+</ul>
+
+<h3>Finished!</h3>
+<p>Review your completed code then zip it up and send it back</p>
+
+</body>
+</html>
